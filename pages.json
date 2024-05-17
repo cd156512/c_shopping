@@ -1,0 +1,137 @@
+{
+	"easycom": {
+		"autoscan": true,
+		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+		"custom": {
+			"^u--(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+		"^u-([^-].*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/team/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/team/income/income",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/my/register",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/my/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/my/forgetPwd",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/my/recharge/index",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/my/bindBankCard",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/my/withdraws/index",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom"
+			}
+		}
+		
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "value-app",
+		"navigationBarBackgroundColor": "#FFFFFF",//#C8E6C9
+		"backgroundColor": "#DBEAFF"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+	        "selectedColor": "#478BFF",
+	        "list": [
+				{
+	                "pagePath": "pages/index/index",
+	                "iconPath": "static/icon/tabbar/home.png",
+	                "selectedIconPath": "static/icon/tabbar/home-active.png",
+	                "text": ""
+	            },
+	            {
+	                "pagePath": "pages/team/index",
+	                "iconPath": "static/icon/tabbar/team.png",
+	                "selectedIconPath": "static/icon/tabbar/team-active.png",
+	                "text": ""
+	            },
+				{
+				    "pagePath": "pages/order/index",
+				    "iconPath": "static/icon/tabbar/order.png",
+				    "selectedIconPath": "static/icon/tabbar/order-active.png",
+				    "text": ""
+				},
+				{
+				    "pagePath": "pages/my/index",
+				    "iconPath": "static/icon/tabbar/setting.png",
+				    "selectedIconPath": "static/icon/tabbar/setting-active.png",
+				    "text": ""
+				}
+				
+	        ]
+	    }
+}
